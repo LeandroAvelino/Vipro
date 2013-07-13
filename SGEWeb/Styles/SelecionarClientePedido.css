@@ -1,0 +1,168 @@
+﻿.mainSelecionarPedido {
+	background-image:url(../Images/Forms/BkgSelecionarClientePedido.png);
+	background-repeat:no-repeat;
+	width:900px;
+	height:600px;
+	position:absolute;
+	top:80px;
+	left:5px;
+	display:none;
+}
+
+.btnPesquisaNome, .btnPesquisaCnpj, .btnPesquisaCpf, .btnPesquisaFantasia {
+	position:absolute;
+	left:338px;
+}
+.btnPesquisaFantasia { top:91px; }
+.btnPesquisaNome { top:128px; }
+.btnPesquisaCnpj { top:167px; }
+.btnPesquisaCpf { top:205px; }
+
+.inputRazaoSocial, .inputCnpj, .inputCpf, .inputNomeFantasia {
+	position:absolute;
+	left:141px;
+	width:170px;
+}
+.inputRazaoSocial { top:135px; }
+.inputCnpj { top:173px; }
+.inputCpf { top:209px; }
+.inputNomeFantasia { top:101px; width:180px; }
+
+/******************************************************************************
+ * Estilo para o painel que visualiza os dados do cliente
+******************************************************************************/
+
+.dadosCliente {
+    position:absolute;
+    left:430px;
+    top:90px;
+    width:400px;
+}
+
+.dadosClienteSpanHead {
+    color:#303030;
+}
+
+/******************************************************************************
+ * Estilo para o painel que visualiza o painel da pesquisa de cliente.
+******************************************************************************/
+.psqCliente {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-250px;
+    margin-top:-175px;
+    height:350px;
+    width:500px;
+    background-image:url("../Images/Forms/BkgPesquisaCliente.png");
+    background-repeat:no-repeat;
+    z-index:9999;
+}
+
+.psqClienteBtnFechar {
+    position:relative;
+    top:18px;
+    left:460px;
+}
+
+.psqClientePainel {
+    overflow-y:scroll;
+    position:absolute;
+    top:45px;
+    left:20px;
+    width:460px;
+    height:280px;
+}
+
+.psqClienteGrd {
+    position:relative;
+    top:0px;
+    left:0px;
+    width:100%;
+    border-style:none;
+}
+
+.psqClienteGrdHead {
+    height:34px;
+    background-image:url("../Images/Base/BkgGridHead.png");
+    background-repeat:repeat-x;
+}
+
+.psqClienteGrdContent {
+    color:#000;
+    font-size:11px;
+}
+
+.psqClienteGrdColSelecionar {
+    border-style:dotted;
+    border-width:1px;
+    border-color:Silver;
+    color:#2E2E2E;
+    font-weight:normal;
+    font-size:10px;
+    text-transform:uppercase;
+    padding:5px;
+    background-color:transparent;
+}
+
+.psqClienteGrdColSelecionar:hover {
+    color:White;
+    cursor:pointer;
+}
+
+/******************************************************************************
+ * Estilo para o painel que visualiza os pedidos
+******************************************************************************/
+.pnlPedidosHead {
+    position:absolute;
+    top:280px;
+    left:20px;
+    width:382px;
+    height:268px;
+}
+
+.pnlPedidosBtnTodos {
+    position:absolute;
+    top:0px;
+    left:230px;
+}
+
+.pnlPedidosBtnTodos span {
+    color: #CCCCCC;
+}
+
+.pnlPedidosContent {
+    position:absolute;
+    top:30px;
+    left:0px;
+    width:100%;
+    height:230px;
+    overflow-y:scroll;
+}
+
+.pnlPedidosGrd {
+    position:relative;
+    top:0px;
+    left:0px;
+    width:100%;
+    border-style:none;
+}
+
+.pnlPedidosGrdHead {
+    height:34px;
+    background-image:url("../Images/Base/BkgGridHead.png");
+    background-repeat:repeat-x;
+}
+
+.pnlPedidosBtnGo {
+    position: relative;
+    top: 265px;
+    left: 220px;
+}
+
+.pnlPedidosGrdContent {
+    color: #000000;
+    border-style: dotted;
+    border-width: 1px;
+    border-color: Gray;
+}

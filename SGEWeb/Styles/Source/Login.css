@@ -1,0 +1,20 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.lgnBkg {background-image:url(../../Images/Login/LoginBkg.png); background-repeat:repeat-x; height:154px; width:100%;
+  position:absolute; top:50%; margin-top:-77px; left:0px;}
+  
+.lgnSgeLogo {position:absolute; top:50%; left:250px; margin-top:-25px; display:none;}
+
+.lgnMsgBemVindo {position:absolute; top:50%; left:250px; margin-top:-185px; display:none;}
+
+.lgnInputBkg {position:absolute; top:50%; margin-top:-65px; left:557px; background-image:url(../../Images/Login/LoginInput.png);
+  background-repeat:no-repeat; width:261px; height:76px; display:none;}
+
+.lgnInputLogin, .lgnInputSenha {background-color:#FFF; color:#000; border-style:none; font-size:18px;
+  position:absolute; left:90px; width:160px; text-transform:uppercase;}
+.lgnInputLogin {top:7px;}
+.lgnInputSenha {top:50px;}
+  
+.lgnEntrarBtn {position:absolute; top:50%; margin-top:20px; left:720px; display:none;}
+

@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterMain.master.cs" Inherits="SGEWeb.Forms.MasterMain" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="../Styles/Base.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/MasterMain.css" rel="stylesheet" type="text/css" />
+    <script src="../Scripts/jquery-1.7.2.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery-price_format.1.7.js" type="text/javascript"></script>
+    <script src="../Scripts/MasterMain.js" type="text/javascript"></script>
+    <title></title>
+    <asp:ContentPlaceHolder ID="headMaster" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="formMaster" runat="server">
+    <asp:ScriptManager ID="ScriptManagerAjax" runat="server"></asp:ScriptManager>
+    
+    <!-- barra no top com o logotipo do sistema -->
+    <div id="mainTop" class="mainTop">
+        <img id="imgLogoTop" src="../Images/Base/SGELogo.png" alt="" class="mainTopLogo" />
+    </div>
+    
+    <!-- conteúdo dinâmino -->
+    <div>
+        <asp:ContentPlaceHolder ID="contentMaster" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <!-- visualizar mensagens diversas -->
+    <asp:UpdatePanel ID="atencao_ajax_pnl" runat="server">
+        <ContentTemplate>
+            <asp:Panel ID="atencao_pnl" runat="server" Visible="false" CssClass="atencao">
+                <br /><br /><br />
+                <asp:Label ID="atencao_lbl" runat="server"></asp:Label>
+                <br /><br />
+                <center><asp:Button ID="atencao_btn_fechar" runat="server" Text=" OK " CssClass="atencaoBtnOK" OnClick="atencao_btn_fechar_Click" /></center>
+            </asp:Panel>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+
+    <!-- visualizar mensagens de confirmação -->
+    <asp:UpdatePanel ID="confirma_ajax_pnl" runat="server">
+        <ContentTemplate>
+            <asp:Panel ID="confirma_pnl" runat="server" Visible="False" CssClass="confirmacao">
+                <br /><br /><br />
+                <asp:Label ID="confirma_lbl" runat="server"></asp:Label>
+                <br /><br />
+                <asp:LinkButton ID="confirma_btn_sim" runat="server" OnClick="confirma_btn_sim_Click">Sim</asp:LinkButton>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="confirma_btn_nao" runat="server" OnClick="confirma_btn_nao_Click">Não</asp:LinkButton>
+            </asp:Panel>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+
+    </form>
+</body>
+</html>

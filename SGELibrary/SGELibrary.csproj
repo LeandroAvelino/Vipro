@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ABE06C7B-C9B7-4B74-A120-450CBDD631B4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SGELibrary</RootNamespace>
+    <AssemblyName>SGELibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Businees\Cliente.cs" />
+    <Compile Include="Businees\ConfiguracoesParametros.cs" />
+    <Compile Include="Businees\NaturezaOperacao.cs" />
+    <Compile Include="Businees\NFe.cs" />
+    <Compile Include="Businees\NotaFiscal.cs" />
+    <Compile Include="Businees\Pedido.cs" />
+    <Compile Include="Businees\Produto.cs" />
+    <Compile Include="Businees\Regras.cs" />
+    <Compile Include="Businees\Tipos.cs" />
+    <Compile Include="Businees\Util.cs" />
+    <Compile Include="Data\conexao.cs" />
+    <Compile Include="Data\DbCliente.cs" />
+    <Compile Include="Data\DbNaturezaOperacao.cs" />
+    <Compile Include="Data\DbNFe.cs" />
+    <Compile Include="Data\DbNotaFiscal.cs" />
+    <Compile Include="Data\DbPedido.cs" />
+    <Compile Include="Data\DbProduto.cs" />
+    <Compile Include="Data\DbConfiguracoesParametros.cs" />
+    <Compile Include="NFeWS\Homologacao\homolocacaoNFeRetRecepcao.cs" />
+    <Compile Include="NFeWS\Homologacao\homologacaoCadConsultaCadastro2.cs" />
+    <Compile Include="NFeWS\Homologacao\homologacaoNfeRecepcao2.cs" />
+    <Compile Include="NFeWS\Homologacao\homologacaoNFeStatus.cs" />
+    <Compile Include="Objects\ObjClienteFantasia.cs" />
+    <Compile Include="Objects\ObjClienteFull.cs" />
+    <Compile Include="Objects\ObjConfiguracoesParametros.cs" />
+    <Compile Include="Objects\ObjGrupoProduto.cs" />
+    <Compile Include="Objects\ObjIBGEMunicipio.cs" />
+    <Compile Include="Objects\ObjIBGEUf.cs" />
+    <Compile Include="Objects\ObjMarcaProduto.cs" />
+    <Compile Include="Objects\ObjNaturezaOperacao.cs" />
+    <Compile Include="Objects\ObjNotaFiscal.cs" />
+    <Compile Include="Objects\ObjPedido.cs" />
+    <Compile Include="Objects\ObjPedidoFull.cs" />
+    <Compile Include="Objects\ObjPedidoProduto.cs" />
+    <Compile Include="Objects\ObjProduto.cs" />
+    <Compile Include="Objects\ObjSerieProduto.cs" />
+    <Compile Include="Objects\ObjSubstituicaoTributaria.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\NFeWS.Producao.ConsultaCadastro\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\Scripts\Executado\" />
+    <Folder Include="Data\Scripts\Executar\" />
+    <Folder Include="NFeWS\Producao\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\cancNFe_v2.00.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\consCad_v2.00.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\consReciNFe_v2.00.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\consSitNFe_v2.00.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\consStatServ_v2.00.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\enviNFe_v2.00.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\inutNFe_v2.00.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\leiauteCancNFe_v2.00.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\leiauteConsSitNFe_v2.00.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\leiauteConsStatServ_v2.00.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\leiauteConsultaCadastro_v2.00.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\leiauteInutNFe_v2.00.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\leiauteNFe_v2.00.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\nfe_v2.00.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\procCancNFe_v2.00.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\procInutNFe_v2.00.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\procNFe_v2.00.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\retCancNFe_v2.00.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\retConsCad_v2.00.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\retConsReciNFe_v2.00.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\retConsSitNFe_v2.00.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\retConsStatServ_v2.00.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\retEnviNFe_v2.00.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\retInutNFe_v2.00.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\tiposBasico_v1.03.xsd" />
+    <None Include="NFeWS\Homologacao\schema_xml\PL_006j\xmldsig-core-schema_v1.01.xsd" />
+    <None Include="Properties\DataSources\System.Xml.XmlNode.datasource" />
+    <None Include="Service References\NFeWS.Producao.ConsultaCadastro\PSPcadconsultacadastro2.wsdl" />
+    <None Include="Service References\NFeWS.Producao.ConsultaCadastro\SGELibrary.NFeWS.Producao.ConsultaCadastro.nfeCabecMsg.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="wsdl\homolog\HSPcadconsultacadastro2.wsdl" />
+    <None Include="wsdl\homolog\HSPNfeCancelamento2.wsdl" />
+    <None Include="wsdl\homolog\HSPNfeConsulta2.wsdl" />
+    <None Include="wsdl\homolog\HSPNfeDownloadNF.wsdl" />
+    <None Include="wsdl\homolog\HSPNfeInutilizacao2.wsdl" />
+    <None Include="wsdl\homolog\HSPNfeRecepcao2.wsdl" />
+    <None Include="wsdl\homolog\HSPNfeRetRecepcao2.wsdl" />
+    <None Include="wsdl\homolog\HSPNfeStatusServico2.wsdl" />
+    <None Include="wsdl\homolog\HSPRecepcaoEvento.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\NFeWS.Producao.ConsultaCadastro\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\NFeWS.Producao.ConsultaCadastro\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\NFeWS.Producao.ConsultaCadastro\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\NFeWS.Producao.ConsultaCadastro\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

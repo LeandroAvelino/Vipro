@@ -1,0 +1,46 @@
+﻿.mainTop {
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:77px;
+	width:100%;
+	background-image:url(../../Images/Base/BkgMasterMainTop.png);
+	background-repeat:repeat-x;
+	display:none;
+}
+
+.mainTopLogo {
+	position:relative;
+	top:10px;
+	left:15px;
+	display:none;
+}
+
+.atencao, .confirmacao {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -104px;
+    margin-left: -202px;
+    width: 405px;
+    height: 208px;
+    background-image: url(../../Images/Base/msg_atencao.png);
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
+.confirmacao {
+    background-image: url(../../Images/Base/msg_confirmacao.png);
+}
+
+.atencaoBtnOK {
+    border: 1px solid #000;
+    padding: 5px 10px 5px 10px;
+    background-color: Orange;
+    cursor: pointer;
+}
+.atencaoBtnOK:hover {
+    font-weight: bold;
+    border:1px solid #FFF;
+    color: #FFF;
+}

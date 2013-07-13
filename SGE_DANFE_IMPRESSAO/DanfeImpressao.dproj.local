@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/04/12 11:25:52.004.pas,C:\Documents and Settings\vipro\Meus documentos\RAD Studio\Projects\Unit1.pas=F:\SGE_DANFE_IMPRESSAO\ufrmDanfeImpressao.pas</Transaction>
+    <Transaction>2013/04/12 11:25:52.004.dfm,C:\Documents and Settings\vipro\Meus documentos\RAD Studio\Projects\Unit1.dfm=F:\SGE_DANFE_IMPRESSAO\ufrmDanfeImpressao.dfm</Transaction>
+    <Transaction>2013/04/12 11:26:07.346.dproj,C:\Documents and Settings\vipro\Meus documentos\RAD Studio\Projects\Project1.dproj=F:\SGE_DANFE_IMPRESSAO\DanfeImpressao.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

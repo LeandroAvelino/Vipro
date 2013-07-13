@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2012/10/10 16:17:04.728.pas,C:\Documents and Settings\vipro\Meus documentos\RAD Studio\Projects\Unit1.pas=C:\svn_fontes\branches\SGE_versao_pasta_txt\SGE\SGE_MoveTxt\ufrmHome.pas</Transaction>
+    <Transaction>2012/10/10 16:17:04.728.dfm,C:\Documents and Settings\vipro\Meus documentos\RAD Studio\Projects\Unit1.dfm=C:\svn_fontes\branches\SGE_versao_pasta_txt\SGE\SGE_MoveTxt\ufrmHome.dfm</Transaction>
+    <Transaction>2012/10/10 16:17:15.774.dproj,C:\Documents and Settings\vipro\Meus documentos\RAD Studio\Projects\Project1.dproj=C:\svn_fontes\branches\SGE_versao_pasta_txt\SGE\SGE_MoveTxt\SGE_MoveTxt.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,152 @@
+﻿.notaFiscal {
+	position:absolute;
+	top:80px;
+	left:5px;
+	width:920px;
+	height:176px;
+}
+
+.notaFiscalTitulo {
+	position:relative;
+	top:0px;
+	left:0px;
+}
+
+.notaFiscalTitulo table td {
+    padding-left: 10px;
+}
+
+.notaFiscalConteudo {
+	position:relative;
+	top:5px;
+	left:15px;
+}
+
+.notaFiscalConteudo table {
+	border-width:0px;
+	padding:0px;
+}
+
+.notaFiscalAba {
+	background-image:url(../Images/Base/BkgGridHead.png);
+	background-repeat:repeat-x;
+	width:900px;
+	height:38px;
+	padding-top:7px;
+	padding-left:7px;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+.notaFiscalAbaConteudo {
+  padding-left:7px;
+  padding-bottom:5px;
+  color:#CCCCCC;
+}
+
+.notaFiscalImpostoTable, .notaFiscalTransportadorTable { width:880px; }
+
+/******************************************************************************
+* estilo para faturamento
+******************************************************************************/
+.nfFaturamentoGrd {
+    width: 350px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+}
+
+
+/******************************************************************************
+* estilo para os produtos
+******************************************************************************/
+.prdGrd {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 880px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+}
+
+.prdGrdHead {
+    height:34px;
+    background-image:url("../Images/Base/BkgGridHead.png");
+    background-repeat:repeat-x;
+    color: #000000;
+}
+
+.prdGrdContent {
+    color: #000000;
+    border-style: dotted;
+    border-width: 1px;
+    border-color: Gray;
+    height:30px;
+    line-height:30px;
+}
+
+/******************************************************************************
+* estilo para o painel de produtos com preços diferentes
+******************************************************************************/
+.pnlPrdPrecoDif {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-image: url("../Images/Forms/BkgGridProdutosDiferentes.png");
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 350px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.pnlPrdPrecoDifTitulo {
+    color: #FFCC33;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-weight: bold;
+}
+
+.pnlPrdPrecoDifGrd {
+    position: relative;
+    top: 12px;
+    left: 3px;
+    width: 660px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000;
+}
+
+.pnlPrdPrecoDifLegenda {
+    position: absolute;
+    top: 310px;
+    left: 30px;
+}
+
+
+/******************************************************************************
+* estilo para o painel que visualiza o padrão de vencimentos do cliente.
+******************************************************************************/
+.pnlPadraoVenctoCliente {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000;
+    background-color: #FFFF99;
+    padding: 5px;
+    color: #000;
+    width: 200px;
+    height: 75px;
+}
+
+
+/******************************************************************************
+* estilo para o painel que visualiza a etapa de gravação
+******************************************************************************/
+.step_panel {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    color: #CCC;
+}
